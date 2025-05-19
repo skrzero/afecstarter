@@ -1,16 +1,20 @@
-import js from '@eslint/js';
+import js from "@eslint/js";
+import globals from "globals";
 
 /** @type {import("eslint").Linter.FlatConfig} */
 export default [
   {
-    ignores: ['dist/**', 'node_modules/**'],
+    ignores: ["dist/**", "node_modules/**"],
   },
   js.configs.recommended,
   {
-    files: ['**/*.js'],
+    files: ["**/*.js"],
     languageOptions: {
-      ecmaVersion: 'latest',
-      sourceType: 'module',
+      ecmaVersion: "latest",
+      sourceType: "module",
+      globals: {
+        ...globals.browser, // ✅ Ajout ici
+      },
     },
     rules: {
       // Règles personnalisées ici
