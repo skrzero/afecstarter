@@ -1,13 +1,23 @@
-                    /********** bootstrap **********/
+/********** bootstrap **********/
 body {
-    width: 100%;
-    height: 100%;
+    margin: 0px ;
+    padding: 0px;
     color: #ffffff;
     font-family: 'Arial', sans-serif;
-    background-image: url("/images/jap_city.png");
+    background-image: url("/images/pexels-wardmediauk-3347244.jpg");
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 
+.page{
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
 .search-bar {
     border-radius: 6px;
     padding-left: 15px;
@@ -121,41 +131,37 @@ background-color: rgba(0,0,0,0.7);
     display: grid;
     
 }
-/* meteo */
+
 .meteo {
-  display: flex;
-  justify-content: center;
-  height: 30vh;
+  padding: 0 20px; /* marge interne à gauche et à droite */
+  box-sizing: border-box;
   width: 100%;
-  margin-bottom: var(--margin-bottom);
-  border-radius: 10px;
-  
 }
+
 
 .meteo_sliders {
   display: flex;
-  width: 100%;
   overflow-x: auto;
-  white-space: nowrap;
-  flex-direction: row;
-  gap: var(--gap-s);
-  scrollbar-width: thin;
-  scrollbar-color: #aaa transparent;
-  padding: 20px;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding: 10px 0;
 }
 
-.meteo_sliders > img {
-  flex: 0 0 auto;
-  width: 100vh;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 6px;
-  scroll-snap-align: start;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  cursor: grab;
-  opacity: 0.85;
+
+.meteo-sliders img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* ou "contain" selon ton besoin */
+  display: block;
 }
+
+
+
+.meteo_sliders:active > img {
+  cursor: grabbing;
+}
+
+
 
 .background_meteo {
   object-fit: cover;
@@ -220,10 +226,6 @@ background-color: rgba(0,0,0,0.7);
 }
 
 
-.page{
-    width: 100%;
-    padding: 20px;
-}
 .btn_bleu{
     display: flex;
     justify-content: center;
