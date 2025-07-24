@@ -65,19 +65,25 @@ background-color: rgba(0,0,0,0.7);
 .text-uppercase{
     color: #F7BA4B;
 }
+.text-center{
+    margin-right: 20px;
+    margin-left: 20px;
+}
 
 .btn-start {
     background-color: #00C851;
     color: white;
     border: none;
     padding: 10px 20px;
-    width: 96%;
+    width: 100%;
 }
 
 .bottom-icons {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .icon-box {
