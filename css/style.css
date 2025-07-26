@@ -243,3 +243,23 @@ background-color: rgba(0,0,0,0.7);
 .btn_bleu_text{
     color: white;
 }
+
+
+
+/* page Agenda */
+  body {
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+#calendar {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+  
+  
