@@ -1,9 +1,9 @@
 {
-  "name": "Afec Starter kit",
+  "name": "afec-starter-kit",
   "version": "1.0.0",
   "type": "module",
   "description": "Afec starter kit",
-  "main": "js/theme.js",
+  "main": "./dist/js/theme.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress",
     "watch": "webpack --progress --watch",
@@ -40,6 +40,7 @@
     "webpack-license-plugin": "^4.5.1"
   },
   "dependencies": {
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "jest": "^30.1.1"
   }
 }
