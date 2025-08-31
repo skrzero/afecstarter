@@ -28,68 +28,64 @@
         </div>
 
         <!-- Weather Image -->
-        <div class="meteo">
-            <div class="meteo_sliders">
-                <div class="meteo_widget"></div>
-                <img class="background_meteo" src="images/nuage.jpg" alt="">
-                <div class="meteo_widget"></div>
-                <img class="background_meteo" src="images/nuage.jpg" alt="">
-            </div>
+        <div id="weather" class="card shadow-sm p-3">
+            <p>Chargement de la météo...</p>
         </div>
+    </div>
 
-        <!-- Events -->
-        <div class="body_app">
-            <div class="notif">
-                <div class="notif -blue">
-                    <div class="notif_content">
-                        <div class="notif_content_date">
-                            <span class="date">30/12</span>
-                            <span class="year">2025</span>
-                        </div>
-                        <div class="notif_content_title">
-                            Rendez-vous garage pour changer les pneus ...
-                        </div>
-                        <div class="notif_content_action">
-                            <img src="images/chevron-right.png" alt="">
-                        </div>
+    <!-- Events -->
+    <div class="body_app">
+        <div class="notif">
+            <div class="notif -blue">
+                <div class="notif_content">
+                    <div class="notif_content_date">
+                        <span class="date">30/12</span>
+                        <span class="year">2025</span>
                     </div>
-                </div>
-                <div class="notif -purple">
-                    <div class="notif_content">
-                        <div class="notif_content_date">
-                            <span class="date">16/04</span>
-                            <span class="year">2025</span>
-                        </div>
-                        <div class="notif_content_title">
-                            Rendez-vous docteur
-                        </div>
-                        <div class="notif_content_action">
-                            <img src="images/chevron-right.png" alt="">
-                        </div>
+                    <div class="notif_content_title">
+                        Rendez-vous garage pour changer les pneus ...
+                    </div>
+                    <div class="notif_content_action">
+                        <img src="images/chevron-right.png" alt="">
                     </div>
                 </div>
             </div>
-
-            <div class="btn_bleu">
-                <a class="btn_bleu_text" href="agenda.html">Tout voir</a>
-            </div>
-
-            <!-- Timer -->
-            <div class="text-center">
-                <p class="text-uppercase">Minuteur</p>
-                <div class="minuteur">00:00:00</div>
-                <button class="btn btn-start">Demarrer</button>
-            </div>
-
-            <!-- Bottom Icons -->
-            <div class="bottom-icons">
-                <div class="icon-box">
-                    <img src="images/memo-removebg-preview.png" alt="Edit">
-                    <img src="images/mail-removebg-preview.png" alt="Email">
+            <div class="notif -purple">
+                <div class="notif_content">
+                    <div class="notif_content_date">
+                        <span class="date">16/04</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="notif_content_title">
+                        Rendez-vous docteur
+                    </div>
+                    <div class="notif_content_action">
+                        <img src="images/chevron-right.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <script src="./js/Timer.js" defer></script>
+
+        <div class="btn_bleu">
+            <a class="btn_bleu_text" href="agenda.html">Tout voir</a>
+        </div>
+
+        <!-- Timer -->
+        <div class="text-center">
+            <p class="text-uppercase">Minuteur</p>
+            <div class="minuteur">00:00:00</div>
+            <button class="btn btn-start">Demarrer</button>
+        </div>
+
+        <!-- Bottom Icons -->
+        <div class="bottom-icons">
+            <div class="icon-box">
+                <img src="images/memo-removebg-preview.png" alt="Edit">
+                <img src="images/mail-removebg-preview.png" alt="Email">
+            </div>
+        </div>
+    </div>
+    <script src="./js/Timer.js" defer></script>
 </body>
 
 </html>

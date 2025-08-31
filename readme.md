@@ -1,3 +1,6 @@
+le projet ce lance  avec "npm run watch" et le live server
+
+
 # Afec Starter Kit
 
 **Starter Kit Afec**, un point de départ simple pour tout projet front-end utilisant Webpack, Sass et JavaScript.
